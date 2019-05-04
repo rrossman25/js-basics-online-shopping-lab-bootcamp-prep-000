@@ -48,7 +48,7 @@ function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++){
      if (item in cart[i]){
         console.log(cart)
-        cart = cart.slice(i,1);
+        cart.splice(i,1);
         console.log(cart);
         return cart;
      }
