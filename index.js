@@ -1,4 +1,4 @@
-var cart = ['vanilla', 'watermelon', 'yams'];
+var cart = [];
 
 function getCart() {
  return cart;
@@ -47,9 +47,7 @@ function total() {
 function removeFromCart(item) {
   for (let i = 0; i < cart.length; i++){
      if (item in cart[i]){
-        console.log(cart)
         cart.splice(i,1);
-        console.log(cart);
         return cart;
      }
   }
@@ -66,7 +64,3 @@ function placeOrder(cardNumber) {
     return `Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`;
   }
 }
-
-removeFromCart('watermelon');
-removeFromCart('yams');
-removeFromCart('yams');
