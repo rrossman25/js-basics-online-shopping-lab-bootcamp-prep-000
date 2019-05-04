@@ -19,16 +19,18 @@ function viewCart() {
   if (cart.length === 0){
     return 'Your shopping cart is empty.'
   }
-  let str = 'In your cart, you have ';
-  for (let i = 0; i < cart.length; i++){
-    if (i+1 !== cart.length){
-      str += `${cart[i].itemName} at $${cart[i].itemPrice}, `
-    }
-    else{
-    str += `and ${cart[i].itemName} at  $${cart[i].itemPrice}.`     
-    }
+  else{
+      let str = 'In your cart, you have ';
+      for (let i = 0; i < cart.length; i++){
+          if (i+1 !== cart.length){
+              str += `${cart[i].itemName} at $${cart[i].itemPrice}, `
+          }
+          else{
+              str += `and ${cart[i].itemName} at  $${cart[i].itemPrice}.`     
+          }
+      }
+      return str;
   }
-  return str;
 }
 
 function total() {
