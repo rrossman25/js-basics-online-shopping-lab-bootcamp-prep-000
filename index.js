@@ -1,4 +1,4 @@
-var cart = [];
+var cart = ['vanilla', 'watermelon', 'yams'];
 
 function getCart() {
  return cart;
@@ -68,3 +68,7 @@ function placeOrder(cardNumber) {
     return `Your total cost is $${sum}, which will be charged to the card ${cardNumber}.`;
   }
 }
+
+removeFromCart('watermelon');
+removeFromCart('yams');
+removeFromCart('yams');
