@@ -29,7 +29,7 @@ function viewCart() {
               str += `${cart[i].itemName} at $${cart[i].itemPrice}, `
           }
           else{
-              str += `and ${cart[i].itemName} at  $${cart[i].itemPrice}.`     
+              str += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`     
           }
       }
       return str;
