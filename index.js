@@ -51,11 +51,9 @@ function removeFromCart(item) {
         cart = cart.slice(i,1);
         console.log(cart);
         return cart;
-     } 
-     else{
-       return 'That item is not in your cart.'
      }
   }
+  return 'That item is not in your cart.'
 }
 
 function placeOrder(cardNumber) {
